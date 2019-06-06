@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <img src="assets/img/logo2.png">
+  <!--<form (submit)="doLogin()">-->
+  <!--<form (submit)="fred()">-->
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <!--<button ion-button color="primary" (click)="logintwo()" block>{{ 'LOGIN_BUTTON' | translate }}</button>-->
+        <button (click)="loginthree()" style="width: 100%" ion-button color="primary" round>{{ 'LOGIN_BUTTON' | translate }}</button>
+        <button style="width: 100%" ion-button color="moto" round>Forgot password</button>
+
+      </div>
+
+    </ion-list>
+  <!--</form>-->
+</ion-content>

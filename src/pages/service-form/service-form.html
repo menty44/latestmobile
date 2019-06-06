@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>plumber</ion-title>
+     <ion-buttons end>
+        <button color="secondary" [navPush]="'PriceListPage'" ion-button clear>
+            Next
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="item-style">
+
+    <h3>Date and Time</h3>
+    <ion-row>
+      <ion-col col-6>
+        <ion-item class="date" no-lines>
+          <ion-icon color="primary" name="calendar" item-start></ion-icon>
+          <ion-datetime displayFormat="MMM DD YYYY"></ion-datetime>
+        </ion-item>
+      </ion-col>
+      <ion-col col-6>
+        <ion-item class="time" no-lines>
+          <ion-icon color="primary" name="time" item-start></ion-icon>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <h3>Address</h3>
+    <ion-item no-lines>
+      <ion-icon color="primary" name="pin" item-start></ion-icon>
+      <ion-input type="text" placeholder="address"></ion-input>
+    </ion-item>
+
+    <h3>Mobile Number</h3>
+    <ion-item no-lines>
+      <ion-icon color="primary" name="call" item-start></ion-icon>
+      <ion-input type="tel" placeholder="mobile number"></ion-input>
+    </ion-item>
+
+    <h3>Note</h3>
+    <ion-item no-lines>
+      <ion-icon color="primary" name="clipboard" item-start></ion-icon>
+      <ion-input type="text" placeholder="note"></ion-input>
+    </ion-item>
+
+  </div>
+</ion-content>

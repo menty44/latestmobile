@@ -1,0 +1,13 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro" style="color: #127dff">
+      {{ 'WELCOME_INTRO' | translate }}
+    </div>
+  </div>
+  <div padding>
+    <button style="width: 100%" ion-button round (click)="signup()">{{ 'SIGNUP' | translate }}</button>
+    <button style="width: 100%" ion-button round (click)="login()" >{{ 'LOGIN' | translate }}</button>
+  </div>
+</ion-content>

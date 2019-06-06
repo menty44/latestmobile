@@ -1,0 +1,40 @@
+page-service-form {
+    .scroll-content{
+        padding-bottom: 8px !important;
+    }
+    h3{
+        display: inline-block;
+        width: 100%;
+        padding-left: 5px;
+        &:first-child{
+            margin-top: 10px !important;
+        }
+    }
+    .item{
+        margin-bottom: 0 !important;
+        padding-left: 10px;
+        [item-start]{
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+        .datetime-md{
+            padding: 0;
+        }
+        .text-input-md {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+    ion-row{
+        margin: 0 -5px;
+        [col-6]{
+            padding: 0 5px;
+        }
+    }
+}
+.date .datetime-text:empty:not(:focus):before{
+    content: "Date"
+}
+.time .datetime-text:empty:not(:focus):before{
+    content: "Time"
+}

@@ -1,0 +1,39 @@
+.list-items{
+  .list{
+    @extend .main-style;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 8px;
+    .item{
+        font-size: 1.4rem;
+        background: none;
+        padding-left: 10px;
+        border-bottom: 1px solid rgba(color($colors,dark),0.5) !important;
+        &:last-child{
+            border: none !important;
+        }
+        .item-inner {
+            padding-left: 7px;
+            margin-left: 10px;
+        }
+        .label-md{
+            font-weight: 500;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+    }
+  }
+  .price-list{
+      .item{
+        &:last-child{
+            background: color($colors,secondary);
+            border-radius: 0 0 3px 3px;
+            padding: 0;
+            font-weight: 500;
+        }   
+      }
+  }
+}

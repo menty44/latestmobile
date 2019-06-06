@@ -1,0 +1,56 @@
+.login-register{
+    .scroll-content{
+        padding: 20px !important;
+    }
+    .app-form{
+        min-height: calc(100% - 50px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .list-md{
+            margin-top: 15px;
+            .item{
+                border-bottom: 1px solid color($colors,light); 
+                background-color: transparent;
+                margin-bottom: 10px;  
+                padding: 0;
+                .item-inner{
+                    margin-left: 5px;
+                } 
+                ion-icon{
+                    margin-bottom: 0px;
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                }
+            }
+        }
+        .text-input-md{
+            margin-bottom: 0px;
+            margin-left: 0px;
+            color:color($colors,light);
+            width: 100%;
+        }
+        input::-webkit-input-placeholder {
+            color: color($colors,light);
+            font-size: 1.4rem;
+        }
+        p{
+            color:color($colors,light); 
+            margin-top: 0;
+            padding: 5px;
+        }
+        .button-md-secondary {
+            color:color($colors,dark);
+        }
+        ion-row{
+            margin:0 -5px;
+        }
+    }
+    .new-account{
+        color:color($colors,light);
+        margin: 25px 0 0 0;
+        span{
+            color:color($colors,secondary);
+        }
+    }
+}  

@@ -1,0 +1,61 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Checkout</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Payment method</h3>
+  <ion-list class="checkout-list" radio-group>
+      <ion-item no-lines>
+        <ion-label>Cash</ion-label>
+        <ion-radio color="primary" checked="true" item-end></ion-radio>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label>Credit card</ion-label>
+        <ion-radio color="primary" item-end></ion-radio>
+      </ion-item>
+  </ion-list>
+  
+  <div class="checkout-list">
+    <ion-row>
+        <ion-col col-4 (click)="payMethod(1)" [ngClass]="{'active_type': type==1 }" text-left>
+              <span><img src="assets/img/visa.png"></span>  
+        </ion-col>
+        <ion-col col-4 (click)="payMethod(2)" [ngClass]="{'active_type': type==2 }" text-center>
+              <span><img src="assets/img/paypal.png"></span>    
+        </ion-col>
+        <ion-col col-4 (click)="payMethod(3)" [ngClass]="{'active_type': type==3 }" text-right>
+              <span><img src="assets/img/master.png"></span> 
+        </ion-col>
+    </ion-row>
+
+    <ion-list no-margin>
+
+        <ion-item>
+          <ion-label stacked>Card Number</ion-label>
+          <ion-input type="number" placeholder="0000-0000-0000"></ion-input>
+        </ion-item>
+
+        <ion-item class="date">
+          <ion-label stacked>Expiry Date (MM/YY)</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>CVV</ion-label>
+          <ion-input type="number" placeholder="000"></ion-input>
+        </ion-item>
+
+    </ion-list>
+  </div>
+
+  <div padding>
+     <button ion-button block color="primary" text-capitalize>Confirm</button>
+  </div>
+</ion-content>
+

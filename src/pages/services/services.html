@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>plumber</ion-title>
+     <ion-buttons end>
+        <button color="secondary" [navPush]="'ServiceFormPage'" ion-button clear>
+            Next
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list class="item-style" no-margin>
+    <ion-list-header no-lines no-padding>
+      Select Services
+    </ion-list-header>
+    <ion-item *ngFor="let item of services" no-lines>
+      <img src="{{item.img}}" item-start>
+      <ion-label>{{item.title}}</ion-label>
+      <ion-checkbox color="primary" item-end></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

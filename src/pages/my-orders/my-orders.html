@@ -1,0 +1,56 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>my Orders</ion-title>
+    <ion-buttons end>
+        <button [navPush]="'NotificationsPage'"  ion-button icon-only>
+            <ion-icon name="notifications"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="list-items" padding>
+    <ion-row>                           
+        <ion-col col-4 text-left>
+            11/10/2018  
+        </ion-col>
+        <ion-col col-4 text-center>
+            02:30PM 
+        </ion-col>
+        <ion-col text-right>
+            Total &300 
+        </ion-col>
+    </ion-row>
+    <ion-list>
+      <ion-item no-lines>
+        <img src="assets/img/ic2.png" item-start>
+        Toilet Fittings
+        <span item-end>$150</span>
+      </ion-item>
+      <ion-item no-lines>
+      <img src="assets/img/ic3.png" item-start>
+        Toilet Fittings
+        <span item-end>$150</span>
+      </ion-item>
+      <ion-item no-lines>
+        <button (click)="ratingModal()" ion-button color="secondary" small>
+            Done
+        </button>
+        <div item-end>
+            <button ion-button color="dark" small clear>
+              Call
+            </button>
+            <button ion-button color="grayColor" small clear>
+              Cancel
+            </button> 
+        </div>
+      </ion-item>
+    </ion-list>
+</ion-content>

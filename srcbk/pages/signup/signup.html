@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'SIGNUP_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <img src="assets/img/logo2.png">
+  <!-- <form (submit)="doSignup()"> -->
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>First Name</ion-label>
+        <ion-input type="text" [(ngModel)]="firstname" name="name"></ion-input>
+      </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Last Name</ion-label>
+            <ion-input type="text" [(ngModel)]="lastname" name="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Gender</ion-label>
+            <ion-input type="text" [(ngModel)]="gender" name="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Mobile No.</ion-label>
+            <ion-input type="text" [(ngModel)]="mobileno" name="name"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <!--<button (click)="register()" style="width: 100%" ion-button color="primary" round>{{ 'SIGNUP_BUTTON' | translate }}</button>-->
+        <button (click)="register()" style="width: 100%" ion-button color="primary" round>{{ 'SIGNUP_BUTTON' | translate }}</button>
+      </div>
+
+    </ion-list>
+  <!-- </form> -->
+</ion-content>

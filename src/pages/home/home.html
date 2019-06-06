@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar hideBackButton>
+    <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>home</ion-title>
+    <ion-buttons end>
+        <button [navPush]="'NotificationsPage'" ion-button icon-only>
+            <ion-icon name="notifications"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="home-banner" padding>
+   <div class="offer">
+     <img src="assets/img/001.png">
+     <h3 no-margin>Cleaning offer 50%OFF</h3>
+   </div>
+  </div>
+  <ion-list padding no-margin>
+      <ion-item *ngFor="let item of items" [navPush]="'ServicesPage'" text-center no-lines>
+          <img src="{{item.img}}">
+          {{item.title}}
+      </ion-item>
+  </ion-list>
+</ion-content>

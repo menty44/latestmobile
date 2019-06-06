@@ -1,0 +1,36 @@
+<ion-content class="main-bg login-register" padding>
+    <div class="app-form" style="padding-top: 55%!important;">
+        <ion-list no-margin>
+            <ion-item no-lines>
+                <ion-icon name="person" color="light" item-start></ion-icon>    
+                <ion-input type="text" placeholder="Username"></ion-input>
+            </ion-item>
+
+            <ion-item no-lines>
+                <ion-icon name="lock"color="light" item-start></ion-icon>    
+                <ion-input type="password" placeholder="Password"></ion-input>
+            </ion-item>
+        </ion-list>
+        <p (click)="forgotPassword()">Forgot password ?</p>
+
+        <button ion-button block color="secondary" [navPush]="'HomePage'">Login</button>
+        <p text-uppercase text-center margin-vertical>or</p>
+        <ion-row>
+            <ion-col col-4>
+<!--                <button ion-button block color="facebook">-->
+<!--                      <ion-icon class="app-facebook"></ion-icon>-->
+<!--                </button>-->
+            </ion-col>
+            <ion-col col-4>
+              <img src="../assets/img/key.png"/>
+<!--                <button ion-button block color="twitter"> -->
+<!--                    <ion-icon name="logo-twitter"></ion-icon>-->
+<!--                </button>-->
+            </ion-col>
+          <ion-col col-4>
+<!--                <img src="../assets/img/key.png"/>-->
+            </ion-col>
+        </ion-row>
+    </div>
+    <p class="new-account">No account yet? Create one<span [navPush]="'RegisterPage'" float-end>Sign Up</span></p>
+</ion-content>

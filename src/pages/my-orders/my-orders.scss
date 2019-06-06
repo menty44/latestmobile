@@ -1,0 +1,38 @@
+page-my-orders {
+  ion-row{
+    background: color($colors,secondary);
+    border-radius: 3px 3px 0 0 ;
+    font-weight: 500;
+    padding: 8px; 
+  }
+  .list-items{
+      .list{
+         border-radius:  0 0 3px 3px;
+         .item{
+            &:last-child{
+              background: color($colors,light); 
+              margin-top: -1px;
+                .item-inner{
+                  padding: 0;
+                  margin: 0;
+                    ion-label{
+                      margin: 0;
+                       .button{
+                         border-radius: 2px;
+                         min-width: 80px;
+                         color: color($colors,dark);
+                       }
+                    }
+                    .button{
+                         text-transform: capitalize;
+                         font-size: 1.4rem;
+                    }
+                    [item-end]{
+                      margin-right: 0;
+                    }
+                } 
+            }  
+         }
+      }
+  }
+}

@@ -1,0 +1,15 @@
+page-register {
+    .header{
+        .toolbar-background-md{
+            background: none;
+        }
+        &:after{
+            background-image: none;
+        }
+        .title{
+            .toolbar-title-md{
+               color: color($colors,secondary);
+            }
+        }
+    }
+}

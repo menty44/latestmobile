@@ -1,0 +1,141 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+@mixin background($size:cover,$repeat: no-repeat,$position:center) {
+    background: {
+      size: $size;
+      repeat: $repeat;
+      position:$position;
+    }
+}
+
+@mixin box-shadow($top, $left ,$blur ,$color, $inset: false) {
+    @if $inset {
+    -webkit-box-shadow:$inset $top $left $blur $color;
+    box-shadow:$inset $top $left $blur $color;
+    } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+    }
+}
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+/* COLOR VARIABLES
+============================================= */
+$orange: #ffa600;
+$blue: #82d2e5;
+$green:#c1d72e;
+
+
+/* GRADIENT LISTS
+============================================= */
+
+$list1: $blue, $green, $orange;
+
+$list2: $blue 0%,$blue 33%,$green 33%,$green 66%, $orange 66%, $orange 100%;
+
+$list3: $blue 0%,$blue 10%,$green 25%,$green 39%,$orange 79%,$orange 100%;
+
+$list4: $blue, $green, $orange, $blue, $green, $orange, $blue, $green, $orange;
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
+
+$colors: (
+  //primary:    #225253,
+  primary:    #C503A2,
+  //primary: ($list1: $blue, $green, $orange),
+  secondary:  #f8ad16,
+  danger:     #f53d3d,
+  light:      #fff,
+  dark:       #222,
+  grayColor:  #999,
+  facebook:   #3b5998,
+  twitter:    #1da1f2 
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+$text-input-md-show-focus-highlight:false;
+$button-md-border-radius:3px;
+$button-md-height:4rem;	
+$button-md-font-size:1.5rem;
+$alert-md-title-font-size:1.7rem;
+$toolbar-md-background:color($colors,primary);
+$toolbar-md-title-font-size:1.7rem;
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";

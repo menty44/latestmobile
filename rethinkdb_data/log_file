@@ -1,0 +1,20 @@
+2019-03-17T13:44:21.422479000 2.433330s notice: Recursively removing directory /Users/admin/Desktop/writter/slay/mobile/onlinewrittermobile/rethinkdb_data/tmp
+2019-03-17T13:44:22.345397000 3.356278s notice: Initializing directory /Users/admin/Desktop/writter/slay/mobile/onlinewrittermobile/rethinkdb_data
+2019-03-17T13:44:22.345564000 3.356437s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/admin/Desktop/writter/slay/mobile/onlinewrittermobile/rethinkdb_data' did not already exist or is empty.)
+2019-03-17T13:44:22.345889000 3.356763s notice: Running rethinkdb 2.3.6 (CLANG 9.0.0 (clang-900.0.37))...
+2019-03-17T13:44:23.426208000 4.437109s notice: Running on Darwin 17.7.0 x86_64
+2019-03-17T13:44:23.426298000 4.437198s notice: Loading data from directory /Users/admin/Desktop/writter/slay/mobile/onlinewrittermobile/rethinkdb_data
+2019-03-17T13:44:30.959455000 11.970521s info: Automatically using cache size of 858 MB
+2019-03-17T13:44:30.988051000 11.999117s notice: Listening for intracluster connections on port 29015
+2019-03-17T13:44:31.014351000 12.025418s notice: Listening for client driver connections on port 28015
+2019-03-17T13:44:31.014899000 12.025966s notice: Listening for administrative HTTP connections on port 8080
+2019-03-17T13:44:31.017210000 12.028277s notice: Listening on cluster addresses: 127.0.0.1, 192.168.43.253, ::1, fe80::1%1, fe80::409:cb8f:bf9:45b5%7, fe80::40ed:695a:3afa:e98a%12
+2019-03-17T13:44:31.019117000 12.030184s notice: Listening on driver addresses: 127.0.0.1, 192.168.43.253, ::1, fe80::1%1, fe80::409:cb8f:bf9:45b5%7, fe80::40ed:695a:3afa:e98a%12
+2019-03-17T13:44:31.020889000 12.031956s notice: Listening on http addresses: 127.0.0.1, 192.168.43.253, ::1, fe80::1%1, fe80::409:cb8f:bf9:45b5%7, fe80::40ed:695a:3afa:e98a%12
+2019-03-17T13:44:31.020910000 12.031976s notice: Server ready, "Admins_MBP_4uu" 380ca8ed-90cb-4aef-9ccc-7e4e1793c029
+2019-03-17T13:59:31.490342000 912.522011s info: Table 6c35abda-514f-42b7-9778-f679164df495: Starting a new Raft election for term 1.
+2019-03-17T13:59:31.520179000 912.551850s info: Table 6c35abda-514f-42b7-9778-f679164df495: Added replica on this server.
+2019-03-17T13:59:32.151067000 913.182777s info: Table 6c35abda-514f-42b7-9778-f679164df495: This server is Raft leader for term 1. Latest log index is 0.
+2019-03-17T13:59:46.938227000 927.970207s info: Table de44e08a-3744-4e44-a22f-15baac1bee29: Starting a new Raft election for term 1.
+2019-03-17T13:59:46.938579000 927.970559s info: Table de44e08a-3744-4e44-a22f-15baac1bee29: Added replica on this server.
+2019-03-17T13:59:47.900884000 928.932883s info: Table de44e08a-3744-4e44-a22f-15baac1bee29: This server is Raft leader for term 1. Latest log index is 0.

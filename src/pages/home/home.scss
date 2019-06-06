@@ -1,0 +1,64 @@
+page-home {
+    .header{
+        &:after{
+            background-image: none;
+        }
+
+        [menuToggle]{
+        display: block !important;
+        }
+    }
+    [padding] {
+        padding: 12px !important;
+    }
+    .home-banner{
+        background: color($colors,primary); 
+        height: 300px;
+        .offer{
+            background: color($colors,light); 
+            border-radius: 3px;
+            overflow: hidden;
+            img{
+                height: 160px;
+                width: 100%;
+            }
+            h3{
+                font-size: 1.7rem;
+                padding: 12px;
+                margin-top: -4px;
+            }
+        }
+    }
+    .list{
+        margin-top: -70px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .item{
+            width: 31%;
+            padding: 0;
+            @include box-shadow(0px, 2px, 5px, rgba(color($colors,dark),.1));
+            margin-bottom: 4%;
+            border-radius: 3px;
+            padding: 10px 5px;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 500;
+            .item-inner{
+                padding: 0;
+                .label-md{
+                    margin: 0;
+                    img{
+                        width: 50px;
+                        height: 70px;
+                        object-fit: contain;
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

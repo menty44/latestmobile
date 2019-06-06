@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <button [navPush]="'NotificationsPage'"  ion-button icon-only>
+          <ion-icon name="notifications"></ion-icon>
+      </button>
+      <button color="light" ion-button icon-only clear (click)="changeData()">
+        <ion-icon name="md-create" *ngIf="isDisabled"></ion-icon>
+        <ion-icon name="checkmark" *ngIf="!isDisabled" class="save_icon"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="profile-header">
+        <div class="profile-img" text-center> 
+            <img src="{{img}}">
+            <span class="upload-img" (click)="getPhoto()"><ion-icon color="light" name="ios-camera-outline"></ion-icon></span>
+        </div>
+        <div class="user-name">
+          <ion-input type="text" placeholder="Username" value="Jobs Lives" disabled="{{isDisabled}}"></ion-input>
+        </div>
+    </div>
+    <ion-list class="profil-data" margin>
+      <ion-item no-lines no-margin>
+        <ion-label stacked>Mobile Number</ion-label>
+        <ion-input id="elemtId" type="tel" placeholder="Phone" value="91234 56789" disabled="{{isDisabled}}"></ion-input>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>Mail</ion-label>
+        <ion-input type="email" placeholder="Email" value="john smith@gmail.com" disabled="{{isDisabled}}"></ion-input>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>Address</ion-label>
+        <ion-textarea type="text" placeholder="Country" value="Paradeplein, 2018 Antwerp, Belgium"
+        disabled="{{isDisabled}}"></ion-textarea>
+      </ion-item>
+    </ion-list>
+</ion-content>

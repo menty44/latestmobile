@@ -1,0 +1,48 @@
+<!--
+  Generated template for the CartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<style>
+  .odd {
+    background: rgba(82,212,255,1);
+    background: -moz-linear-gradient(45deg, rgba(82,212,255,1) 0%, rgba(82,212,255,1) 23%, rgba(64,148,231,1) 46%, rgba(64,148,231,1) 87%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(82,212,255,1)), color-stop(23%, rgba(82,212,255,1)), color-stop(46%, rgba(64,148,231,1)), color-stop(87%, rgba(64,148,231,1)));
+    background: -webkit-linear-gradient(45deg, rgba(82,212,255,1) 0%, rgba(82,212,255,1) 23%, rgba(64,148,231,1) 46%, rgba(64,148,231,1) 87%);
+    background: -o-linear-gradient(45deg, rgba(82,212,255,1) 0%, rgba(82,212,255,1) 23%, rgba(64,148,231,1) 46%, rgba(64,148,231,1) 87%);
+    background: -ms-linear-gradient(45deg, rgba(82,212,255,1) 0%, rgba(82,212,255,1) 23%, rgba(64,148,231,1) 46%, rgba(64,148,231,1) 87%);
+    background: linear-gradient(45deg, rgba(82,212,255,1) 0%, rgba(82,212,255,1) 23%, rgba(64,148,231,1) 46%, rgba(64,148,231,1) 87%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52d4ff', endColorstr='#4094e7', GradientType=1 );
+}
+.even {
+        background-image: linear-gradient(to right bottom, #f3052b, #ff0056, #ff0084, #f300b8, #cc12eb);
+    }
+</style>
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title >Cart Items : {{totalprice}}<ion-icon style="float: right!important;color: #488aff!important;" name="cart">{{count}}</ion-icon></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background: linear-gradient(75deg, #488aff 50%, white 50%)!important;" padding>
+    <button style="width: 100%" ion-button style="background: rgb(85, 141, 2); width:100%;" round>Procees to Pay</button>
+    <button (click)="deleteall()" style="width: 100%" ion-button color="moto" style="width:100%;" round>DELETE ALL PRODUCTS</button>
+    <ion-card class="profile" *ngFor="let item of mycart; let i = index; let even = even; let odd = odd;" [ngClass]="{ odd: odd, even: even }">
+        <ion-card-header >
+            <h4 style="color: white!important;">{{i+1}} Product Name : {{item.name}}<ion-icon style="float: right!important;color: white!important;" name="cart"></ion-icon></h4>
+        </ion-card-header>
+        <ion-card-content style="color: white">
+            <!-- <span style="color: greenyellow">Product Name : {{item.name}}</span><hr> -->
+                <span style="color: greenyellow">Product Code : {{item.productcode}}</span><hr style="color:gray;">
+                <span style="color: greenyellow">Price : KES {{item.sellprice}}</span><hr>
+                <span style="color: greenyellow" (click)="deleteone(item.productcode)">Desc :  {{item.description}}
+                 <span style="color:white; float:right;">DELETE [X]</span>
+                </span>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
