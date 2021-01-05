@@ -30,7 +30,7 @@
     "@ionic/storage": "2.2.0",
     "@ngx-translate/core": "8.0.0",
     "@ngx-translate/http-loader": "^2.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cordova-android": "7.1.4",
     "cordova-plugin-advanced-http": "2.0.4",
     "cordova-plugin-appcenter-analytics": "^0.3.2",
